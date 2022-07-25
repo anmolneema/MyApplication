@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp">
+
+
+
+        <TextView
+            android:id="@+id/emp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@+id/iv_info_mark"
+            android:fontFamily="sans-serif-medium"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/id_emp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emp_name"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/emp_id_profile"
+            android:textColor="@color/light_blue"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/emp_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_emp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-light"
+            android:text="550123456"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/id_adhaar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emp_id"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/emp_adhaar_profile"
+            android:textColor="@color/light_blue"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/emp_adhaar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_adhaar"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-light"
+            android:text="123r4"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/emp_device_detail_make"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emp_adhaar"
+            android:layout_marginTop="20dp"
+            android:text="@string/emp_phone_profile"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/light_blue"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/emp_make_model_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emp_device_detail_make"
+            android:layout_marginTop="5dp"
+            android:text="One Plus"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/emp_device_os_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emp_make_model_device"
+            android:layout_marginTop="5dp"
+            android:text="@android: 10"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

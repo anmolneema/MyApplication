@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/tfe_semi_transparent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:background="#BF000000"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="@string/title"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#BF000000"
+        android:orientation="vertical">
+
+
+
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="org.tensorflow.demo.CameraActivity" >
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlCamera"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/rectangle"
+            >
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottom_sheet_layout"
+        android:visibility="gone"
+        layout="@layout/tfe_od_layout_bottom_sheet" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_switchcam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:tint="@android:color/white"
+        android:visibility="gone"
+        android:src="@drawable/ic_baseline_switch_camera_24"
+        android:layout_margin="16dp"
+        />
+
+    <TextView
+        android:id="@+id/tvLogs"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/fab_add"
+        android:textColor="@color/yellow"
+        android:text="Face not found"
+        android:textSize="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@android:color/white"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center_horizontal"
+        app:layout_anchorGravity="top|end"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_seach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:visibility="gone"
+        android:tint="@android:color/white"
+        app:layout_anchorGravity="top|end"
+        android:layout_alignParentBottom="true"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_margin="16dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/progressBar"
+        android:layout_width="250dp"
+        android:background="@color/gray_eight_op"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_height="70dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:text="Authenticate Please wait..."
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:indeterminateDrawable="@drawable/circle_rotate"
+            android:rotationX="180"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

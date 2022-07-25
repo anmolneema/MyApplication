@@ -1,0 +1,26 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=C3:9E:26:A8:84:04:77:CE:5D:7E:27:39:E4:29:4C:E8:4E:6F:A7:3A%3Bcom.attendance.office
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.attendance.office
+
+    SHA-1 certificate fingerprint:
+    C3:9E:26:A8:84:04:77:CE:5D:7E:27:39:E4:29:4C:E8:4E:6F:A7:3A
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+<!--    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAhC_ktzfvRBVhqBFKJxtISbyY7lnbNdy0</string>-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB-hRy7mO6N6M9IlMcSGZJa8rW5lLXl5pE</string>
+
+</resources>

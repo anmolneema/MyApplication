@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:layout_height="150dp">
+
+
+        <TextView
+            android:id="@+id/gps"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="To Continue, let your device turn on location using Google/t's loction service."
+            android:fontFamily="sans-serif-medium"
+            android:layout_below="@+id/markAtt"
+            android:textColor="@color/disable"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view"
+            android:layout_below="@+id/address"
+            android:background="#8F8F8F" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".49"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:text="CANCEL"
+                android:textAlignment="center"
+                android:textColor="@color/light_red"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight=".01"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/end_time_recycle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#8F8F8F" />
+            <TextView
+                android:id="@+id/btnConfirm"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:textAlignment="center"
+                android:paddingRight="10dp"
+                android:text="CONFIRM"
+                android:textColor="@color/light_blue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

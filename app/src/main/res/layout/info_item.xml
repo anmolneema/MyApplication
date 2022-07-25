@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_info_mark"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/check" />
+
+        <TextView
+            android:id="@+id/tv_ifo_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_info_mark"
+            android:fontFamily="sans-serif-medium"
+            android:text="16 July 2021"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_ino_latlong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ifo_date"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-light"
+            android:text="23.13, 45.90"
+            android:textColor="@android:color/black"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_info_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ino_latlong"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="T-9 Mahalazmi Apartment T-9 Mahalazmi Apartment T-9 Mahalazmi Apartment T-9 Mahalazmi Apartment T-9 Mahalazmi Apartment"
+            android:textColor="@android:color/black"
+            android:textSize="10dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

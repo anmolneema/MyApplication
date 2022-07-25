@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0099cc</color>
+    <color name="colorPrimaryDark">#0099cc</color>
+    <color name="colorAccent">#0099cc</color>
+    <color name="forestGreen">#228B22</color>
+    <color name="white">#FFFFFF</color>
+    <color name="crimson">#A6D0021B</color>
+    <color name="background_popup">#05278c</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="theme_color_dark">#172A42</color>
+    <color name="blue">#000080</color>
+    <color name="disable">#414143</color>
+    <color name="new_transparent">#4D414143</color>
+    <color name="gray_eight_op">#CC414143</color>
+    <color name="orange">#FFFF5E00</color>
+    <color name="blueViolet">#8A2BE2</color>
+    <color name="light_blue">#0099cc</color>
+    <color name="light_red">#FF6363</color>
+    <color name="tfe_color_primary">#ffa800</color>
+    <color name="tfe_color_primary_dark">#ff6f00</color>
+    <color name="tfe_color_accent">#425066</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="tfe_semi_transparent">#66000000</color>
+  <!--  <color name="transparent">#00ffffff</color>-->
+    <color name="green">#00A00C</color>
+    <color name="red">#FE0000</color>
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/markAtt"
+            android:background="@color/disable"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_empl_name"
+            android:layout_width="match_parent"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Dear Anmol Neema (12345) ,"
+            android:fontFamily="sans-serif-medium"
+            android:layout_below="@+id/markAtt"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_greeting"
+            android:layout_width="match_parent"
+            android:text="THank you have arkerd suc"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/tv_empl_name"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_lat_long"
+            android:layout_width="match_parent"
+            android:text="MArkin"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/tv_greeting"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_latlong_value"
+            android:layout_width="match_parent"
+            android:text="Location: 23.45, 34.56"
+            android:textSize="12dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/tv_lat_long"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_mar_address"
+                android:layout_width="match_parent"
+                android:text="MarkOut address:"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/tv_latlong_value"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/tv_address_value"
+            android:layout_width="match_parent"
+            android:textSize="13dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tv_mar_address"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
+            android:text="T9 Mahalaxmo Apartmnt nijappura Ujain Madhya Pradesh 456060, India"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tv_address_value"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/date_time"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_date_time"
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tv_date"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
+            android:text="Wed, 14 Jul 2021, 20:15:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_height="40dp">
+            <Button
+                android:id="@+id/mark_ok"
+                style="@style/ShapeChatTestButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:backgroundTint="@color/disable"
+                android:fontFamily="sans-serif-medium"
+                android:text="Ok"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

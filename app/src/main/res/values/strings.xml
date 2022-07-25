@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MyHR</string>
+    <string name="sign_up">Register Profile</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Welcome</string>
+    <string name="nav_header_subtitle">Hello User</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">MyHR</string>
+    <string name="home">Home</string>
+    <string name="my_info">My Info</string>
+    <string name="menu_gallery">My Logs</string>
+    <string name="gallery">User info</string>
+    <string name="menu_slideshow">Logout</string>
+<!--    <string name="google_map_key">AIzaSyAhC_ktzfvRBVhqBFKJxtISbyY7lnbNdy0</string>-->
+    <string name="google_map_key">AIzaSyB-hRy7mO6N6M9IlMcSGZJa8rW5lLXl5pE</string>
+
+    <string name="emp_id">Employee Id</string>
+    <string name="emp_des">Designation</string>
+    <string name="emp_dep">Department</string>
+    <string name="emp_mail">Mail Id</string>
+    <string name="emp_adhaar">Adhaar Number</string>
+    <string name="emp_phone">Phone</string>
+    <string name="emp_pass">Password</string>
+    <string name="emp_gender">Gender</string>
+    <string name="date_time">Date and Time</string>
+    <string name="emp_name">First Name</string>
+    <string name="emp__last_name">Last Name</string>
+    <string name="emp_id_profile">(Employee Id)</string>
+    <string name="emp_adhaar_profile">(Employee Adhaar)</string>
+    <string name="emp_phone_profile">(Phone Details)</string>
+    <string name="tfe_od_app_name" translation_description="Object Detection demo app [CHAR_LIMIT=40]">Face Recognition</string>
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+    <string name="title" translation_description="authenticate">Authenticate</string>
+</resources>

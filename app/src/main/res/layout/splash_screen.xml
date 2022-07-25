@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/light_blue"
+        android:fontFamily="@font/abril_fatface"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="MyHR"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/loginNext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarLogin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/light_blue"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/logo"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/attendance"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/myHr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/app_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/light_blue" />
+
+                <TextView
+                    android:id="@+id/mobileAttendance"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Attendance"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/disable" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/teDomainId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="40dp"
+                android:text=""
+                android:inputType="text"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/emp_mail"
+                android:textColor="@color/black" />
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:maxLines="1"
+                android:fontFamily="sans-serif-medium"
+                android:inputType="textPassword"
+                android:hint="@string/emp_pass"
+                android:password="true"
+                android:textColor="@color/black"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnLogin"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/round_chat_shape_button"
+                android:onClick="btnClick_login"
+                android:backgroundTint="@color/light_blue"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnSignUp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/round_chat_shape_button"
+                android:onClick="btnClick_signup"
+                android:backgroundTint="@color/light_red"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/light_blue"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/user"
+                android:layout_gravity="center_horizontal"
+               />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/emp_name"
+                android:text=""
+                android:inputType="text"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/last_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/emp__last_name"
+                    android:text=""
+                    android:maxLines="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text=""
+                android:inputType="text"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/emp_mail"
+                android:textColor="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/emp_id"
+                android:inputType="number"
+                android:text=""
+                android:maxLines="1"
+                android:fontFamily="sans-serif-medium"
+                android:maxLength="10"
+                android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/department"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/emp_phone"
+                android:inputType="number"
+                android:text=""
+                android:maxLines="1"
+                android:fontFamily="sans-serif-medium"
+                android:maxLength="10"
+                android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/designation"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/emp_des"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/adhaar"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/emp_adhaar"
+                android:inputType="number"
+                android:text=""
+                android:maxLines="1"
+                android:fontFamily="sans-serif-medium"
+                android:maxLength="12"
+                android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:spinnerMode="dropdown"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:maxLines="1"
+                android:fontFamily="sans-serif-medium"
+                android:inputType="textPassword"
+                android:hint="@string/emp_pass"
+                android:password="true"
+                android:textColor="@color/black"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnSubmit"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/round_chat_shape_button"
+                android:onClick="btnClick_submit"
+                android:backgroundTint="@color/light_blue"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progressBar"
+        android:layout_width="200dp"
+        android:background="@color/gray_eight_op"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:text="Loading..."
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:indeterminateDrawable="@drawable/circle_rotate"
+            android:rotationX="180"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>
